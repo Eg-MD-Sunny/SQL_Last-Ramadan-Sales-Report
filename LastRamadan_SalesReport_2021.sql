@@ -32,11 +32,6 @@ Group by w.MetropolitanAreaId,
          pv.Name
 
 
-
-
-
-
-
 --select c.Id,c.Name 
 --from Category c
 --where c.Name like 'Fresh Fruits'
