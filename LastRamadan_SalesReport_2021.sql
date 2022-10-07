@@ -1,10 +1,10 @@
 select w.MetropolitanAreaId [MetropolitanAreaID],
-	   w.Id [WarehouseID],
-	   w.Name [Warehouse],
-       pv.Id [PVID],
-       pv.Name [Product],
-	   Count(tr.SalePrice) [Sales QTY],
-	   Sum(tr.SalePrice) [Amount]
+	   w.Id 				[WarehouseID],
+	   w.Name 				[Warehouse],
+       pv.Id 				[PVID],
+       pv.Name 				[Product],
+	   Count(tr.SalePrice)  [Sales QTY],
+	   Sum(tr.SalePrice) 	[Amount]
 
 from ThingRequest tr
 join Shipment s on s.Id = tr.ShipmentId 
